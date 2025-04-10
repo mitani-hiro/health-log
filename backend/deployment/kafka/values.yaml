@@ -1,0 +1,25 @@
+replicaCount: 1
+
+kraft:
+  enabled: true
+  clusterId: "kraft-cluster-id-001"
+  controllerQuorumVoters: "0@kafka-0.kafka-headless.kafka.svc.cluster.local:9093"
+
+zookeeper:
+  enabled: false
+
+listeners:
+  client:
+    protocol: PLAINTEXT
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+
+persistence:
+  enabled: true
+  size: 1Gi

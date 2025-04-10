@@ -1,0 +1,15 @@
+kafka:
+  clusters:
+    - name: kraft-cluster
+      bootstrapServers: kafka.kafka.svc.cluster.local:9092
+
+env:
+  - name: KAFKA_CLUSTERS_0_NAME
+    value: kraft-cluster
+  - name: KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS
+    value: kafka.kafka.svc.cluster.local:9092
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 31080

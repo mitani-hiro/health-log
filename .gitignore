@@ -1,0 +1,7 @@
+.DS_Store
+
+# frontend
+
+# backend
+backend/deployment/.env
+backend/deployment/kafka_data
