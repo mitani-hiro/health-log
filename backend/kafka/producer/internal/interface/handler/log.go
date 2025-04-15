@@ -3,13 +3,12 @@ package handler
 import (
 	"context"
 	"net/http"
-	"producer/common/ckafka"
-	"producer/common/logger"
+
 	"producer/internal/interface/oapi"
 	"time"
 
-	// "common/ckafka"
-	// "common/logger"
+	"common/ckafka"
+	"common/logger"
 
 	"github.com/gin-gonic/gin"
 	"github.com/segmentio/kafka-go"

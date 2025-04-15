@@ -1,10 +1,9 @@
 package main
 
 import (
-	// "common/ckafka"
-	// "common/logger"
-	"producer/common/ckafka"
-	"producer/common/logger"
+	"common/ckafka"
+	"common/logger"
+
 	"producer/router"
 )
 

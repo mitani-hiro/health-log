@@ -3,7 +3,7 @@ module producer
 go 1.24.0
 
 require (
-	//common v0.0.0-00010101000000-000000000000
+	common v0.0.0-00010101000000-000000000000
 	github.com/gin-gonic/gin v1.10.0
 	github.com/segmentio/kafka-go v0.4.47
 )
@@ -41,4 +41,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-// replace common => ../../common
+replace common => ../../common
